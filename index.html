@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Flyout Travels</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <a href="#" class="head">Flyout Travels</a>
+            <nav id="menuList">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Review</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+            <img src="./images/menu.png" alt="menu" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h1 class="title">Flyout Travels</h1>
+                <p><br>Flyout Travels allows to you buy<br>exclusive private jets for appropritate cost Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. Quibusdam, dicta deserunt.</p>
+                <br><button class="but-1">See Pricing</button>
+            </div>
+            <div class="col-2">
+                <div class="form">
+                    <form >
+                        <h2 class="form-title">Sign Up For Free</h2>
+                        <input type="text" class="username" placeholder="Username"><br>
+                        <input type="email" class="email" placeholder="Email Address"><br>
+                        <input type="password" class="password" placeholder="Password"><br>
+                        <input type="password" class="password" placeholder="Re-enter password"><br><br>
+                        <button class="but-signup">Sing Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

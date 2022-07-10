@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background-image: linear-gradient(rgb(1, 94, 245), skyblue);
+    width: 100%;
+    height: 500px; 
+}
+
+.head{
+    font-family: "Century Gothic";
+    height: 34px;
+    font-weight: 100;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 1.5% 1%;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin: 2.2% 3%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 12px;
+    padding-left: 50px;
+}
+
+nav ul li a:hover{
+    color: grey;
+    transition: 0.3s;
+}
+
+.menu-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 1.5% 2.2%;
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+}
+.menu{
+    margin: 2.2% 
+}
+
+.row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.col-1{
+    font-family: sans-serif;
+    margin-top: 8.2%;
+    margin-left: 6.2%;
+    flex-basis: 50%;
+}
+
+.but-1{
+    width: 110px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+    background-color: greenyellow;
+}
+
+.but-1:hover{
+    background-color: rgb(170, 235, 72);
+    cursor: pointer;
+}
+
+.col-2{
+    flex-basis: 50%;
+}
+
+.form{
+    background-color: white;
+    margin-top: 13.2%;
+    height: 320px;
+    width: 310px;
+    margin-left: 66px;
+    margin-right: 13px;
+    border-radius: 22px;
+}
+
+h2{
+    font-family: "Century Gothic";
+    text-align: center;
+    font-weight: 100;
+    padding-top: 14px;
+}
+
+.username{
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 220px;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(216, 212, 212);
+    padding-left: 10px;
+}
+
+.email{
+    margin-top: 18px; 
+    margin-left: 45px;
+    width: 220px;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(216, 212, 212);
+    padding-left: 10px;
+}
+
+.password{
+    margin-top: 18px;
+    margin-left: 45px;
+    width: 220px;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(216, 212, 212);
+    padding-left: 10px;
+}
+
+.but-signup{
+    margin-left: 100px;
+    width: 104px;
+    height: 25px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(47, 106, 255);
+}
+
+.but-signup:hover{
+    cursor: pointer;
+    background-color: hwb(223 36% 41%);
+}
+
+@media only screen and (max-width: 670px) {
+    .row{
+        flex-direction: column;
+    }
+    .main{
+        height: 700px;
+    }
+    .col-2{
+        margin-right: 50px;
+    }
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#f7f5f6, #f0eeee);
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+       display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-icon{
+        display: block;  
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
